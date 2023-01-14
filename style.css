@@ -102,7 +102,7 @@ nav ul li {
 .btn-primary:hover {
   background-color: white;
   color: black;
-  box-shadow: 0px 2px 7px 5px tomato;
+  box-shadow: 0px 2px 7px 5px var(--primary-color);
 }
 
 .header-banner {
@@ -168,6 +168,103 @@ nav ul li {
   line-height: 26px;
   color: #727272;
   padding-bottom: 30px;
+}
+
+/* Design the features provided section */
+.features-provided {
+  margin-top: 130px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.features-provided-left {
+  width: 586px;
+  height: 982px;
+}
+
+.features-provided-title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #131313;
+  padding-left: 25px;
+  border-left: 8px solid var(--primary-color);
+}
+
+.features-provided-desc {
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+}
+
+.features-provided-card-container {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.features-provided-card {
+  width: 586px;
+  height: 171px;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 30px 45px 30px 30px;
+}
+
+.features-provided-card h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #131313;
+  padding-bottom: 10px;
+}
+
+.features-provided-card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  padding-bottom: 30px;
+}
+
+.features-provided-right {
+  width: 800px;
+  height: 1059px;
+  position: relative;
+}
+
+.features-provided-right img {
+  position: absolute;
+  width: 708px;
+  height: 982px;
+  right: 0;
+  border-radius: 8px;
+}
+
+.features-provided-right button span {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.features-provided-right button small {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.features-provided-right button {
+  position: absolute;
+  bottom: 0;
 }
 
 /* Add media query for Mobile Screen */
