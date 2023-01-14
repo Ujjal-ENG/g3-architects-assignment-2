@@ -1,6 +1,11 @@
 /* Imported the work sans font  */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap");
 
+/* Declare some root element */
+:root {
+  --primary-color: #ff900e;
+}
+
 /* Removed Default layout and create Box layout */
 * {
   margin: 0;
@@ -87,10 +92,17 @@ nav ul li {
   font-size: 20px;
   line-height: 23px;
   text-align: center;
-  background-color: #ff900e;
+  background-color: var(--primary-color);
   color: #ffffff;
   border-radius: 8px;
   cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 2px 7px 5px tomato;
 }
 
 .header-banner {
@@ -103,9 +115,65 @@ nav ul li {
   background-position: center;
 }
 
+/* Design the Features Information */
+.features {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-photo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.features-photo img {
+  width: 342px;
+  height: 342px;
+}
+
+.features-info {
+  width: 537px;
+  height: 304px;
+  margin-left: 80px;
+}
+
+.features-info h1 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 53px;
+  color: #727272;
+  padding-bottom: 25px;
+}
+
+.features-info h1 strong {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #131313;
+}
+
+.features-info span {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--primary-color);
+}
+
+.feature-section-desc {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 26px;
+  color: #727272;
+  padding-bottom: 30px;
+}
+
 /* Add media query for Mobile Screen */
 
 @media only screen and (max-width: 576px) {
+  /* Responsive Navbar Section */
   nav {
     width: 100%;
     height: 100%;
@@ -138,5 +206,21 @@ nav ul li {
   .header-section-desc {
     font-size: 1rem;
     padding: 0px 10px 20px 10px;
+  }
+
+  /* Responsive features section */
+  .features {
+    flex-direction: column;
+  }
+
+  .features-photo {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .features-info {
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    margin: 30px auto 0px;
   }
 }
