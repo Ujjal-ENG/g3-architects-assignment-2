@@ -262,7 +262,7 @@ nav ul li {
   text-align: center;
 }
 
-.features-provided-right button {
+.feautes-btn {
   position: absolute;
   bottom: 0;
 }
@@ -291,7 +291,7 @@ nav ul li {
   }
 
   .header-banner {
-    width: 90%;
+    width: 100%;
     height: 300px;
     margin: 0 auto;
   }
@@ -302,7 +302,6 @@ nav ul li {
 
   .header-section-desc {
     font-size: 1rem;
-    padding: 0px 10px 20px 10px;
   }
 
   /* Responsive features section */
@@ -319,5 +318,52 @@ nav ul li {
     height: 100%;
     text-align: center;
     margin: 30px auto 0px;
+  }
+
+  /* Responsive features provided section */
+  .features-provided {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 0px;
+  }
+
+  .features-provided-card {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .features-provided-left {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+  }
+
+  .features-provided-right {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .features-provided-right img {
+    width: 90%;
+    height: auto;
+  }
+
+  .features-provided-right button span {
+    font-size: 35px;
+  }
+
+  .features-provided-right button small {
+    font-size: 15px;
+  }
+
+  .feautes-btn {
+    position: absolute;
+    bottom: -50rem;
   }
 }
