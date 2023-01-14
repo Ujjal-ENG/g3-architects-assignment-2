@@ -267,6 +267,65 @@ nav ul li {
   bottom: 0;
 }
 
+/* Design the Facts section*/
+.facts {
+  margin: 130px 0px 0px 0px;
+}
+
+.facts-title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #131313;
+  padding-bottom: 25px;
+}
+
+.facts-desc {
+  width: 542px;
+  height: 52px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+}
+
+.facts-cards {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 125px;
+}
+
+.card {
+  padding: 45px 35px;
+  width: 245px;
+  height: 245px;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* transform: rotate(90deg); */
+}
+
+.card h1 {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 53px;
+  color: #424242;
+  padding: 15px 0px;
+}
+
+.card p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #727272;
+}
+
 /* Add media query for Mobile Screen */
 
 @media only screen and (max-width: 576px) {
