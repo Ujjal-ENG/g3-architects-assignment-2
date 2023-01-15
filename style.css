@@ -106,13 +106,13 @@ nav ul li {
 }
 
 .header-banner {
-  margin-top: 50px;
   background-image: url("./images/banner.png");
-  width: 100%;
+  width: 80%;
   height: 600px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  margin: 50px auto;
 }
 
 /* Design the Features Information */
@@ -233,7 +233,9 @@ nav ul li {
   color: #727272;
   padding-bottom: 30px;
 }
-
+.features-provided-right-res {
+  display: none;
+}
 .features-provided-right {
   width: 800px;
   height: 1059px;
