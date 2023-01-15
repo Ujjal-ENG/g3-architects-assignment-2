@@ -565,6 +565,9 @@ footer p {
   .hide {
     display: none;
   }
+  .features-provided-right-res {
+    display: block;
+  }
 
   .features-provided-right-res img {
     width: 100%;
