@@ -211,7 +211,7 @@ nav ul li {
 
 .features-provided-card {
   width: 586px;
-  height: 171px;
+  height: 100%;
   background: #ffffff;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
@@ -269,7 +269,20 @@ nav ul li {
 
 /* Design the Facts section*/
 .facts {
-  margin: 130px 0px 0px 0px;
+  margin: 130px 0px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.facts-info {
+  max-width: 550px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .facts-title {
@@ -281,8 +294,6 @@ nav ul li {
 }
 
 .facts-desc {
-  width: 542px;
-  height: 52px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -290,16 +301,20 @@ nav ul li {
   color: #727272;
 }
 
+.facts-card-container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 100px auto;
+}
+
 .facts-cards {
-  margin-top: 100px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   gap: 125px;
 }
 
 .card {
-  padding: 45px 35px;
   width: 245px;
   height: 245px;
   border: 1px solid var(--primary-color);
@@ -308,7 +323,14 @@ nav ul li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* transform: rotate(90deg); */
+  transition: all 0.5s ease-in;
+}
+
+.card:hover:nth-child(even) {
+  transform: rotate(45deg);
+}
+.card:hover:nth-child(odd) {
+  transform: rotate(-45deg);
 }
 
 .card h1 {
@@ -403,6 +425,9 @@ nav ul li {
     margin-bottom: 100px;
   }
 
+  .hide {
+    display: none;
+  }
   .features-provided-right {
     width: 100%;
     height: auto;
@@ -424,5 +449,16 @@ nav ul li {
   .feautes-btn {
     position: absolute;
     bottom: -50rem;
+  }
+
+  /* Responsive the facts section */
+  .facts {
+    width: 100%;
+  }
+  .facts-cards {
+    flex-direction: column;
+  }
+  .facts-info {
+    width: 100%;
   }
 }
