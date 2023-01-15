@@ -563,20 +563,23 @@ footer p {
   .hide {
     display: none;
   }
-  .features-provided-right {
+
+  .features-provided-right-res img {
     width: 100%;
-    height: auto;
-  }
-  .features-provided-right img {
-    width: 90%;
-    height: auto;
   }
 
-  .features-provided-right button span {
+  .features-provided-right-res .button {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .features-provided-right-res button span {
     font-size: 35px;
   }
 
-  .features-provided-right button small {
+  .features-provided-right-res button small {
     font-size: 15px;
   }
 
