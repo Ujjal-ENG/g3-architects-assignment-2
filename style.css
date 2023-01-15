@@ -179,7 +179,8 @@ nav ul li {
 }
 
 .features-provided-left {
-  width: 586px;
+  max-width: 586px;
+  width: 100%;
   height: 982px;
 }
 
@@ -469,8 +470,7 @@ nav ul li {
 footer {
   max-width: 1450px;
   width: 100%;
-  max-height: 100px;
-  height: 100%;
+  height: 100px;
   margin: 130px auto;
   background: #fff4e7;
   border-radius: 8px;
@@ -489,6 +489,10 @@ footer p {
 
 @media only screen and (max-width: 576px) {
   /* Responsive Navbar Section */
+
+  header {
+    width: 100%;
+  }
   nav {
     width: 100%;
     height: 100%;
@@ -524,6 +528,7 @@ footer p {
 
   /* Responsive features section */
   .features {
+    width: 100%;
     flex-direction: column;
   }
 
@@ -531,11 +536,15 @@ footer p {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .features-photo img {
+    width: 100%;
+    height: 100%;
+  }
+
   .features-info {
     width: 70%;
     height: 100%;
-    text-align: center;
-    margin: 30px auto 0px;
+    margin: 20px auto;
   }
 
   /* Responsive features provided section */
@@ -594,16 +603,11 @@ footer p {
   }
 
   /* Responsive the facts section */
-  .facts {
-    width: 100%;
-  }
   .facts-cards {
     flex-direction: column;
   }
-  .facts-info {
-    width: 100%;
-  }
 
+  
   /* Responsive the sponsors section*/
   .sponsors-logo {
     flex-direction: column;
@@ -613,5 +617,11 @@ footer p {
 
   .our-happy-customers-container {
     flex-direction: column;
+  }
+
+  /* Responsive for Footer section */
+  footer {
+    width: 100%;
+    height: 100%;
   }
 }
